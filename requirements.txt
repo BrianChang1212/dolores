@@ -1,0 +1,9 @@
+ollama>=0.4.0
+rich>=13.0
+pyyaml>=6.0
+piper-tts>=1.0.0
+edge-tts>=6.0
+pygame>=2.5.0
+pymupdf>=1.24.0
+python-docx>=1.1.0
+openpyxl>=3.1.0

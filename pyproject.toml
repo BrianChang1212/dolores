@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dolores"
+version = "0.1.0"
+description = "Dolores — Your local AI companion with long-term memory. Inspired by Westworld."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = [
+    "ai", "companion", "girlfriend", "chatbot", "ollama",
+    "mempalace", "memory", "tts", "local", "offline",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Communications :: Chat",
+]
+dependencies = [
+    "ollama>=0.4.0",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+    "piper-tts>=1.0.0",
+    "edge-tts>=6.0",
+    "pygame>=2.5.0",
+    "pymupdf>=1.24.0",
+    "python-docx>=1.1.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/BrianChang1212/dolores"
+
+[tool.setuptools.packages.find]
+include = ["dolores*"]
+
+[project.scripts]
+dolores = "dolores:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

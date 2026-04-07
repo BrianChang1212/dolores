@@ -1,0 +1,30 @@
+# Personal data (never commit)
+personal/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TTS temp files
+_temp_voice*.mp3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dolores state (user-specific)
+# ~/.dolores/ is outside the repo, no need to ignore
