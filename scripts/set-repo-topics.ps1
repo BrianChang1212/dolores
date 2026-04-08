@@ -11,22 +11,17 @@ if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
+# Core topics (owner list) + mempalace (stack); add more with --add-topic as needed.
 $topics = @(
     "python",
     "ollama",
-    "cli",
-    "rich",
-    "local-ai",
-    "offline",
-    "tts",
+    "mcp",
     "chromadb",
-    "memory",
-    "chatbot",
+    "tts",
+    "cli",
+    "local-ai",
     "companion",
-    "mempalace",
-    "pyyaml",
-    "edge-tts",
-    "piper-tts"
+    "mempalace"
 )
 
 $ghArgs = @("repo", "edit", $repo)
